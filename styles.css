@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1e272e;
+    color: #f5f6fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.game-container {
+    display: inline-block;
+}
+
+.puzzle-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin-bottom: 20px;
+}
+
+.puzzle-tile {
+    width: 100px;
+    height: 100px;
+    background-color: #2f3640;
+    color: #f5f6fa;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.puzzle-tile:hover {
+    background-color: #40739e;
+    transform: scale(1.05);
+}
+
+.empty {
+    background-color: transparent;
+    cursor: default;
+}
+
+.game-info {
+    font-size: 1.2em;
+}
+
+#restart-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #e84118;
+    border: none;
+    border-radius: 5px;
+    color: #f5f6fa;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#restart-button:hover {
+    background-color: #c23616;
+}
